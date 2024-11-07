@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --phone-colors:#dfdfe2;
+    --center-text:center;
+    --gray-00:#fff;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+body{
+    background-color: #3b3b4f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#0a0a23;
+}
+.freecodecamp-logo{
+    width:100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+h1{
+    width: 100%;
+    max-width: 480px;
+    color: aliceblue;
+    margin: 15px 0px;
+    text-align: var(--center-text);
+    font-size: 3em;
+    font-weight: bold;
+}
+.phone-container{
+    position: relative;
+    background-color: var(--phone-colors);
+    width: 250px;
+    height: 460px;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 15px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phone-background{
+    background-color:rgb(20, 2, 20);
+    width: 100%;
+    height: 25px;
+}
+.phone-camera{
+    background-color: var(--phone-colors);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: auto;
+}
+label{
+    margin:10px auto 5px;
+    cursor: default;
+}
+#user-input{
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: var(--center-text);
+    width: 90%;
+    height: 42px;
+    font-size: 16px;
+}
+#results-div{
+    overflow-y: auto;
+    height:265px;
+    width:100%;
+}
+div{
+    display: block;
+}
+.phone-footer{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-styles{
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    color: #0a0a23;
+    font-size: 18px;
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, #928d86);
+    border-color: #ffffff;
+    border-width: 3px;
+}
